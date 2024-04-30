@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+        <!-- title -->
+        <title>Applicação</title>
+
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+        <!-- links / style -->
+        <link rel="icon" 
+        type="image/png" 
+        href="/assets/images/icon.svg"
+        />
+    
+        <link rel="stylesheet" href="/assets/style/style.css" />
+    
+        <!-- scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+        <script>
+          dayjs.extend(window.dayjs_plugin_relativeTime)
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+        <script>
+          dayjs.locale('pt-br')
+        </script>
+
+        <script defer src="/js/main.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <img src="/assets/images/logo.svg" alt="An logo icon.">
+        </header>
+
+        <form onsubmit="">
+            <fieldset>
+                <legend>Inscrição</legend>
+                <div>
+                    <div class="input-wrapper">
+                        <img src="/assets/images/circle-user.svg" alt="An icon of a user.">
+                        <input type="text" placeholder="Nome Completo" name="nome" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <img src="/assets/images/at-sign.svg" alt="An sign icon.">
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <button>
+                        REALIZAR INSCRIÇÃO
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+
+        <section class="participants-list">
+            <h2>Participantes</h2>
+            <div>
+                <table width="100%">
+                  <thead style="text-align: left">
+                    <tr>
+                      <th>Participante</th>
+                      <th>Data da inscrição</th>
+                      <th>Data do check-in</th>
+                    </tr>
+                  </thead>
+        
+                  <tbody>
+        
+                  </tbody>
+                </table>
+              </div>
+        </section>
+    </main>
 </body>
 </html>
