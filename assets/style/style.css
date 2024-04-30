@@ -1,0 +1,33 @@
+/* ---- font import ---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ---- reset amd def settings ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --border: 1px solid #ffffff1a;
+}
+
+body,
+table,
+input,
+button {
+    font: 300 16px/140% 'Inter Tight', sans-serif;
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #121214;
+    color: #ffffff;
+}
