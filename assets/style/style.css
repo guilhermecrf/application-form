@@ -18,8 +18,8 @@ body,
 table,
 input,
 button {
-    font: 300 16px/140% 'Inter Tight', sans-serif;
-    
+    font: 300 16px / 140% 'Inter Tight', sans-serif;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -29,5 +29,140 @@ button {
 
 body {
     background-color: #121214;
-    color: #ffffff;
+    color: #FFF;
+}
+
+/* ---- style of container / header ---- */
+
+.container {
+    max-width: 45rem;
+
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+}
+
+header {
+    padding: 1.25rem 0;
+}
+
+form {
+    border: var(--border);
+    border-inline: none;
+    padding: 1.25rem 0;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset > div {
+    display: flex;
+    gap: .75rem;
+}
+
+.input-wrapper {
+    flex: 1;
+  
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+  
+    border: var(--border);
+    border-radius: 10px;
+  
+    padding: .5rem .75rem;
+  
+    font: 400 14px / 150% 'Roboto', sans-serif;
+    color: #C4C4CC;
+}
+
+input {
+    all: unset;
+}
+
+fieldset legend,
+section h2 {
+    color: #E1E1E6;
+
+    font: 700 16px / 140% 'Roboto', sans-serif;
+
+    padding-bottom: 16px;
+}
+
+fieldset button {
+    background: #F48F56;
+    color: #00292E;
+
+    width: fit-content;
+    border: 0;
+    border-radius: .625rem;
+    padding: .4375rem 1.25rem;
+  
+    font: 700 12px/24px 'Roboto', sans-serif;
+}
+
+fieldset button:hover {
+    background: #f37c37;
+
+    transform: scale(1.01);
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+/* ---- style of participants list ---- */
+
+.participants-list {
+    padding: 1.25rem 0;
+}
+
+.participants-list > div {
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead {
+    font-size: .875rem;
+    line-height: 1rem;
+}
+
+thead th,
+tbody td {
+  padding: .75rem 1rem;
+}
+
+tbody td {
+    color: #c4c4cc;
+
+    font-size: .8125rem;
+    line-height: .9375rem;
+
+    border-top: var(--border);
+}
+
+tbody td strong {
+    color: white;
+
+    font-size: .875rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+tbody td small {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+tbody td button {
+    color: #9FF9CC;
+    
+    all: unset;
+}
+  
+tbody td button:hover {
+    text-decoration: underline;
 }
